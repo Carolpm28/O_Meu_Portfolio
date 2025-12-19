@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!-- Language Selector Overlay -->
+<div id="languageOverlay" class="language-selector-overlay">
+    <div class="language-selector">
+        <p style="color: #f0f8eb; margin-bottom: 1rem; font-size: 0.9rem; opacity: 0.8;">Choose language / Escolha o idioma</p>
+        <div class="language-options">
+            <button class="language-option" onclick="setLanguage('pt')">PT</button>
+            <button class="language-option" onclick="setLanguage('en')">EN</button>
+        </div>
+    </div>
+</div>
+
+<!-- Theme Toggle Button -->
+<button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+    <span class="theme-icon">🌙</span>
+</button>
+
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home" data-en="Home" data-pt="Início">Início</a></li>
+                <li><a href="#about" data-en="About" data-pt="Sobre">Sobre</a></li>
+                <li><a href="#skills" data-en="Skills" data-pt="Skills">Skills</a></li>
+                <li><a href="#projects" data-en="Projects" data-pt="Projetos">Projetos</a></li>
+                <li><a href="#contact" data-en="Contact" data-pt="Contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        
+        <div class="code-background">
+            <div class="code-line">const developer = { name: 'Carolina', skills: ['React', 'Node.js', 'TypeScript'] };</div>
+            <div class="code-line">function createAmazingWebsite() { return innovation + passion; }</div>
+            <div class="code-line">import { creativity, problemSolving } from './carolina-skills';</div>
+            <div class="code-line">class FullStackDeveloper extends Engineer { constructor() { super('awesome'); } }</div>
+            <div class="code-line">const portfolio = new Project({ type: 'web', status: 'deployed', awesomeness: 100 });</div>
+            <div class="code-line">// Transforming ideas into digital reality </div>
+        </div>
+
+        <div class="hero-content">
+            <div class="typing-container">
+                <div class="typing-container">
+                    <div class="typing-text">
+                        <div class="typing-line h1-line" id="line1" 
+                            data-en="Welcome to my little corner of the internet" 
+                            data-pt="Bem-Vindo ao meu pequeno espaço digital"></div>
+                        <div class="typing-line subtitle-line" id="line2" 
+                            data-en="Software Engineer" 
+                            data-pt="Engenheira Informática"></div>
+                        <div class="typing-line specialties-line" id="line3" 
+                            data-en="Building things that matter, with code that lasts" 
+                            data-pt="Crio soluções com impacto, sustentadas por código que perdura"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-buttons">
+                <a href="#" class="btn"
+                   onclick="showCVOptions(event)"
+                   data-en="Download CV"
+                   data-pt="Download CV">
+                    Download CV
+                </a>
+                <div id="cv-options" style="display:none; margin-top: 10px; text-align:center;">
+                    <button onclick="downloadCV('pt')" class="cv-lang-btn">PT</button>
+                    <button onclick="downloadCV('en')" class="cv-lang-btn">EN</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator"></div>
+    </section>
+
+        <section id="about" class="fade-in">
+    <h2 data-en="About Me" data-pt="Sobre Mim">Sobre Mim</h2>
+    <div class="about-content">
+        <div class="about-image">
+    <img src="assets/images/profile.jpeg" alt="Carolina Machado" class="profile-image">
+</div>
+        <div>
+            <p style="font-size: 1.1rem; margin-bottom: 1.5rem;" 
+               data-en="Hello! I'm Carolina, a software engineer passionate about technology and continuous learning. I enjoy taking on challenges that help me grow, and exploring new tools that allow me to create useful, well-structured solutions." 
+               data-pt="Olá! Sou a Carolina, uma engenheira informática apaixonada por tecnologia e aprendizagem contínua. Gosto de enfrentar desafios que me façam crescer e de explorar novas ferramentas que me permitam criar soluções úteis e bem estruturadas.">
+                Olá! Sou a Carolina, uma engenheira informática apaixonada por tecnologia e aprendizagem contínua. Gosto de enfrentar desafios que me façam crescer e de explorar novas ferramentas que me permitam criar soluções úteis e bem estruturadas.
+            </p>
+
+            <p style="font-size: 1.1rem; margin-bottom: 1.5rem;" 
+               data-en="I am currently pursuing a Master’s degree in Cybersecurity at the University of Minho, deepening my knowledge in an area that I find both challenging and essential in today’s digital world. Having discovered a true passion for this field, my goal is to specialize and build a professional career in cybersecurity, contributing to safer digital environments while continuously growing as an expert." 
+               data-pt="Recentemente, ingressei no Mestrado em Cibersegurança na Universidade do Minho, onde procuro aprofundar os meus conhecimentos numa área que considero tão desafiante quanto essencial no mundo digital atual. Tendo descoberto uma verdadeira paixão por este campo, o meu objetivo é especializar-me e trabalhar profissionalmente em cibersegurança, contribuindo para ambientes digitais mais seguros, enquanto continuo a crescer como especialista.">
+                Recentemente, ingressei no Mestrado em Cibersegurança na Universidade do Minho, onde procuro aprofundar os meus conhecimentos numa área que considero tão desafiante quanto essencial no mundo digital atual. Tendo descoberto uma verdadeira paixão por este campo, o meu objetivo é especializar-me e trabalhar profissionalmente em cibersegurança, contribuindo para ambientes digitais mais seguros, enquanto continuo a crescer como especialista.
+            </p>
+
+            <p style="font-size: 1.1rem; margin-bottom: 1.5rem;"
+                data-en="Outside of coding, I love traveling and discovering new cultures, as I believe that understanding different ways of living and working not only broadens our perspective, but also improves how we collaborate as a team. In my free time, I enjoy moments with family and friends, explore new hobbies, and maintain a healthy balance between personal and professional life — because time management is also an essential skill."
+                data-pt="Fora do código, adoro viajar e conhecer novas culturas, pois acredito que compreender diferentes formas de viver e trabalhar enriquece não só a nossa visão do mundo, mas também a forma como colaboramos em equipa. Nos meus tempos livres, aproveito para estar com a família e amigos, exploro novos hobbies e cultivo o equilíbrio entre a vida pessoal e profissional — porque saber gerir bem o tempo também é uma competência essencial.">
+                Fora do código, adoro viajar e conhecer novas culturas, pois acredito que compreender diferentes formas de viver e trabalhar enriquece não só a nossa visão do mundo, mas também a forma como colaboramos em equipa. Nos meus tempos livres, aproveito para estar com a família e amigos, exploro novos hobbies e cultivo o equilíbrio entre a vida pessoal e profissional — porque saber gerir bem o tempo também é uma competência essencial.
+            </p>
+
+            <p style="font-size: 1.1rem;"
+                data-en="I believe good code should be clean, efficient, and easy to maintain, and that curiosity and a constant desire to learn are key qualities for any good developer."
+                data-pt="Acredito que um bom código deve ser limpo, eficiente e fácil de manter, e que a curiosidade e a vontade constante de aprender são qualidades-chave para qualquer bom programador.">
+                Acredito que um bom código deve ser limpo, eficiente e fácil de manter, e que a curiosidade e a vontade constante de aprender são qualidades-chave para qualquer bom programador.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+            <div class="skills-grid">
+            <div class="terminal-container">
+            <div class="terminal-header">
+                <span class="terminal-prompt">user@portfolio:~/skills$</span>
+            </div>
+            
+            <div class="terminal-body">
+                
+                <div class="skill-category security-glow">
+                    <div class="category-header">> Cybersecurity & InfoSec</div>
+                    <div class="skill-pills">
+                        <span class="skill-pill" onclick="showSkillDetails('security')">Applied Cryptography</span>
+                        <span class="skill-pill" onclick="showSkillDetails('network')">Network Security</span>
+                        <span class="skill-pill" onclick="showSkillDetails('securecoding')">Secure Coding</span>
+                        <span class="skill-pill" onclick="showSkillDetails('flask')">Flask Security</span>
+                    </div>
+                </div>
+
+                <div class="skill-category backend">
+                    <div class="category-header">Backend & Systems Engineering</div>
+                    <div class="skill-pills">
+                        <span class="skill-pill" onclick="showSkillDetails('python')">Python</span>
+                        <span class="skill-pill" onclick="showSkillDetails('csharp')">C# / .NET</span>
+                        <span class="skill-pill" onclick="showSkillDetails('database')">SQL / SQLite</span>
+                        <span class="skill-pill" onclick="showSkillDetails('apis')">REST APIs</span>
+                    </div>
+                </div>
+
+                <div class="skill-category ai">
+                    <div class="category-header">AI & Data Science</div>
+                    <div class="skill-pills">
+                        <span class="skill-pill" onclick="showSkillDetails('unet')">U-Net</span>
+                        <span class="skill-pill" onclick="showSkillDetails('resnet')">ResNet50</span>
+                        <span class="skill-pill" onclick="showSkillDetails('medical')">Medical Imaging</span>
+                    </div>
+                </div>
+
+                <div class="skill-category frontend">
+                    <div class="category-header">Frontend & Interactive</div>
+                    <div class="skill-pills">
+                        <span class="skill-pill" onclick="showSkillDetails('react')">React</span>
+                        <span class="skill-pill" onclick="showSkillDetails('javascript')">JavaScript</span>
+                        <span class="skill-pill" onclick="showSkillDetails('threejs')">Three.js</span>
+                        <span class="skill-pill" onclick="showSkillDetails('unity')">Unity</span>
+                    </div>
+                </div>
+                
+                <div class="terminal-command">
+                    <span class="terminal-prompt">user@portfolio:~/skills$</span>
+                    <span class="cursor">_</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="fade-in">
+    <h2>Projetos</h2>
+    <div class="projects-grid">
+        <div class="terminal-container">
+            <div class="terminal-header">
+                <span class="terminal-prompt">user@portfolio</span>
+                <span class="terminal-path">:~/projects$</span>
+            </div>
+            
+            <div class="terminal-command">ls -la</div>
+            
+             <div class="project-item" onclick="window.open('https://github.com/Carolpm28/SD_Leiloes', '_blank')">
+                <div>
+                    <div class="project-name">>SecureBid_P2P</div>
+                    <div class="project-description"
+                        data-en="Design and develop a peer-to-peer privacy-preserving auction system using applied cryptography."
+                        data-pt="Sistema de leilões peer-to-peer que preserva a privacidade usando criptografia aplicada.">
+                        Sistema de leilões peer-to-peer que preserva a privacidade usando criptografia aplicada.
+                    </div>
+                </div>
+                <!--<img src="" alt="SecureBid_P2P" class="project-image">-->
+                <div class="project-status status-sb">[PYTHON • CRYPTO]</div>
+            </div>
+
+            <div class="project-item" onclick="window.open('https://github.com/Carolpm28/Cat_Dahs_3D', '_blank')">
+                <div>
+                    <div class="project-name">> CatDash_3D</div>
+                    <div class="project-description"
+                        data-en="3D arcade racing game where cats compete on household tracks"
+                        data-pt="3D arcade racing game onde gatos competem em pistas domésticas">
+                        Jogo de corrida arcade 3D onde gatos competem em pistas domésticas
+                    </div>
+                </div>
+                <!--<img src="" alt="CatDash_3D" class="project-image">-->
+                <div class="project-status status-cd">[three.js•js]</div>
+            </div>
+            
+            <div class="project-item" onclick="window.open('https://github.com/leonor-p/BibliotecaUniLib', '_blank')">
+                <div>
+                    <div class="project-name">> UniLib</div>
+                    <div class="project-description"
+                        data-en="Digital library for accessing books and academic materials"
+                        data-pt="Biblioteca digital para acesso a livros e materiais académicos">
+                        Biblioteca digital para acesso a livros e materiais académicos</div>
+                </div>
+                <div class="project-status status-ul">[React•JS]</div>
+            </div>
+            
+            <div class="project-item" onclick="window.open('https://github.com/Carolpm28/ToDo.It-App', '_blank')">
+                <div>
+                    <div class="project-name">> ToDo-it</div>
+                    <div class="project-description"
+                        data-en="Task management app with modern interface and advanced features"
+                        data-pt="App de tarefas com interface moderna e funcionalidades avançadas">
+                        App de tarefas com interface moderna e funcionalidades avançadas</div>
+                </div>
+                <div class="project-status status-td">[WPF•C#]</div>
+            </div>
+
+            <div class="project-item" onclick="window.open('https://github.com/Carolpm28/O_Meu_Portflio', '_blank')">
+                <div>
+                    <div class="project-name">> O_Meu_Portfólio</div>
+                    <div class="project-description"
+                        data-en="Personal website built from scratch to showcase my projects and skills."
+                        data-pt="Website pessoal desenvolvido de raiz para apresentar os meus projetos e competências."></div>
+                </div>
+                <div class="project-status status-mp">[HTML•CSS•JS]</div>
+            </div>
+            
+            <div class="project-item" onclick="window.open('https://github.com/Carolpm28/BrainBridge', '_blank')">
+                <div>
+                    <div class="project-name">> BrainBridge</div>
+                    <div class="project-description"
+                        data-en="Accessible and cooperative digital memory game"
+                        data-pt="Jogo de memória digital acessível e cooperativo">
+                        Jogo de memória digital acessível e cooperativo</div>
+                </div>
+                <div class="project-status status-bb">[JS]</div>
+            </div>
+            
+            <div class="terminal-command">
+                <span class="terminal-prompt">user@portfolio</span>
+                <span class="terminal-path">:~/projects$</span>
+                <span class="cursor">_</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section id="contact" class="fade-in">
+            <h2 data-en="Let's Work Together" data-pt="Vamos Trabalhar Juntos">Vamos Trabalhar Juntos</h2>
+            <div class="contact-content">
+                <p style="font-size: 1.2rem; margin-bottom: 2rem;" 
+                    data-en="Have a project in mind? I'm always available to discuss new opportunities and interesting collaborations." 
+                    data-pt="Tens um projeto em mente? Estou sempre disponível para discutir novas oportunidades e colaborações interessantes.">
+                    Tens um projeto em mente? Estou sempre disponível para discutir novas oportunidades e colaborações interessantes.
+                </p>
+                <div class="contact-links">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=carolinapmachado44@gmail.com" target="_blank" class="contact-link">
+                        <img src="assets/images/gmail.png" alt="Gmail" class="contact-icon" />
+                        Email
+                    </a>
+                    <a href="https://www.linkedin.com/in/carolinapm28/" target="_blank" class="contact-link">
+                        <img src="assets/images/link.png" alt="LinkedIn" class="contact-icon" />
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/Carolpm28" target="_blank" class="contact-link">
+                        <img src="assets/images/git.png" alt="GitHub" class="contact-icon" />
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Carolina Machado. </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
