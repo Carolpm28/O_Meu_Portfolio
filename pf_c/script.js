@@ -196,7 +196,7 @@ function showCVOptions(event) {
 }      
 
 function downloadCV(lang) {
-    let file = lang === 'en' ? 'Carolina_MachadoCV_EN.pdf' : 'Carolina_MachadoCV.pdf';
+    let file = lang === 'en' ? 'Carolina_MachadoCV_EN.pdf' : 'Carolina_MachadoCV_PT.pdf';
     const link = document.createElement('a');
     link.href = 'assets/doc/' + file;
     link.download = file;
